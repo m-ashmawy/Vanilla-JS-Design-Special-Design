@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla JS Template 1</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
+    />
+  </head>
+  <body>
+    <!-- start setting box -->
+    <div class="set-box">
+      <span class="gear"><i class="fa-solid fa-gear"></i></span>
+      <div class="colors">
+        <h4>Colors</h4>
+        <div class="content">
+          <span data-color="#009688" class="active"></span>
+          <span data-color="#03a9f4"></span>
+          <span data-color="#ff9800"></span>
+          <span data-color="#e91e63"></span>
+          <span data-color="#a327b8"></span>
+        </div>
+      </div>
+      <div class="backs options">
+        <h4>Random Backgrounds</h4>
+        <div class="content yes-no">
+          <span data-bg="yes" class="active">Yes</span>
+          <span data-bg="no">No</span>
+        </div>
+      </div>
+      <div class="bullets options">
+        <h4>Show Bullets</h4>
+        <div class="content yes-no">
+          <span data-show="yes" class="active">Yes</span>
+          <span data-show="no">No</span>
+        </div>
+      </div>
+      <span class="reset">Reset Options</span>
+    </div>
+    <!-- end setting box -->
+    <!-- start nav bullets -->
+    <div class="nav-bullets">
+      <a href="#about" data-cont="About"></a>
+      <a href="#skills" data-cont="Skills"></a>
+      <a href="#gallery" data-cont="Gallery"></a>
+      <a href="#timeline" data-cont="Timeline"></a>
+      <a href="#features" data-cont="Features"></a>
+      <a href="#testimonials" data-cont="Testimonials"></a>
+    </div>
+    <!-- end nav bullets -->
+    <!-- start landing page -->
+    <header>
+      <div class="overlay"></div>
+      <div class="container">
+        <nav>
+          <div class="logo">Special Design</div>
+          <ul class="links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+          <i class="fa-solid fa-bars menu"></i>
+        </nav>
+        <div class="introduction">
+          <h1>We Are <span>Creative</span> Agency</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus magnam atque necessitatibus velit.
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- end landing page -->
+    <!-- start About us -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="text">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            ipsum, tenetur dolores esse magni ratione distinctio! Quod iusto
+            neque fuga, maxime quos nostrum quibusdam dicta deserunt blanditiis
+            non voluptate id?
+          </p>
+        </div>
+        <figure class="figure">
+          <img src="imgs/about-us.jpg" alt="a graphic showing some data" />
+        </figure>
+      </div>
+    </section>
+    <!-- end About us -->
+    <!-- start our-skills -->
+    <section class="our-skills" id="skills">
+      <div class="container">
+        <h2>Our Skills</h2>
+        <div class="skills">
+          <div class="skill">
+            <div class="name">HTML</div>
+            <div class="level">
+              <span data-prog="80%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="name">CSS</div>
+            <div class="level">
+              <span data-prog="75%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="name">JavaScript</div>
+            <div class="level">
+              <span data-prog="80%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="name">PHP</div>
+            <div class="level">
+              <span data-prog="70%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="name">Python</div>
+            <div class="level">
+              <span data-prog="70%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="name">MySQL</div>
+            <div class="level">
+              <span data-prog="80%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end our-skills -->
+    <!-- start gallery -->
+    <section class="gallery" id="gallery">
+      <h2>Gallery</h2>
+      <div class="pics">
+        <div class="pic">
+          <img
+            src="imgs/01.jpg"
+            alt="a picture from our Gallery"
+            data-title="Image one"
+          />
+        </div>
+        <div class="pic">
+          <img
+            src="imgs/02.jpg"
+            alt="a picture from our Gallery"
+            data-title="Image two"
+          />
+        </div>
+        <div class="pic">
+          <img
+            src="imgs/03.jpg"
+            alt="a picture from our Gallery"
+            data-title="Image Three"
+          />
+        </div>
+        <div class="pic">
+          <img
+            src="imgs/04.jpg"
+            alt="a picture from our Gallery"
+            data-title="Image Four"
+          />
+        </div>
+        <div class="pic">
+          <img
+            src="imgs/05.jpg"
+            alt="a picture from our Gallery"
+            data-title="Image Five"
+          />
+        </div>
+        <div class="pic">
+          <img
+            src="imgs/06.png"
+            alt="a picture from our Gallery"
+            data-title="Image Six"
+          />
+        </div>
+        <div class="pic">
+          <img
+            src="imgs/07.jpg"
+            alt="a picture from our Gallery"
+            data-title="Image Seven"
+          />
+        </div>
+        <div class="pic">
+          <img
+            src="imgs/08.jpg"
+            alt="a picture from our Gallery"
+            data-title="Image Eight"
+          />
+        </div>
+        <div class="pic">
+          <img
+            src="imgs/09.jpg"
+            alt="a picture from our Gallery"
+            data-title=""
+          />
+        </div>
+        <div class="pic">
+          <img src="imgs/10.jpg" alt="a picture from our Gallery" />
+        </div>
+      </div>
+    </section>
+    <!-- end gallery -->
+    <!-- start timeline -->
+    <section class="timeline" id="timeline">
+      <h2>Timeline</h2>
+      <div class="container">
+        <div class="year">2022</div>
+        <section class="proj">
+          <h3>Testing Heading</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+            ex molestiae illo nisi quaerat veniam beatae aliquid eligendi.
+            Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime
+            nobis quam?
+          </p>
+        </section>
+        <section class="proj">
+          <h3>Testing Heading</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+            ex molestiae illo nisi quaerat veniam beatae aliquid eligendi.
+            Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime
+            nobis quam?
+          </p>
+        </section>
+        <div class="year">2021</div>
+        <section class="proj">
+          <h3>Testing Heading</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+            ex molestiae illo nisi quaerat veniam beatae aliquid eligendi.
+            Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime
+            nobis quam?
+          </p>
+        </section>
+        <section class="proj">
+          <h3>Testing Heading</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+            ex molestiae illo nisi quaerat veniam beatae aliquid eligendi.
+            Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime
+            nobis quam?
+          </p>
+        </section>
+        <div class="line"></div>
+      </div>
+    </section>
+    <!-- end timeline -->
+    <!-- start features -->
+    <section class="features" id="features">
+      <div class="container">
+        <h2>Our Features</h2>
+        <div class="content">
+          <div class="feature">
+            <img
+              src="imgs/programming.svg"
+              alt="a graphic related to current feature"
+            />
+            <h3>Development</h3>
+            <p>
+              We are professional developers, we will do anything you imagine in
+              no time.
+            </p>
+          </div>
+          <div class="feature">
+            <img
+              src="imgs/marketing.svg"
+              alt="a graphic related to current feature"
+            />
+            <h3>Marketing</h3>
+            <p>
+              We are professional developers, we will do anything you imagine in
+              no time.
+            </p>
+          </div>
+          <div class="feature">
+            <img
+              src="imgs/hosting-icon.svg"
+              alt="a graphic related to current feature"
+            />
+            <h3>Hosting</h3>
+            <p>
+              We are professional developers, we will do anything you imagine in
+              no time.
+            </p>
+          </div>
+          <div class="feature">
+            <img
+              src="imgs/mobile-app.svg"
+              alt="a graphic related to current feature"
+            />
+            <h3>Mobile Developement</h3>
+            <p>
+              We are professional developers, we will do anything you imagine in
+              no time.
+            </p>
+          </div>
+          <div class="feature">
+            <img
+              src="imgs/graphic-design.svg"
+              alt="a graphic related to current feature"
+            />
+            <h3>UI/UX Design</h3>
+            <p>
+              We are professional developers, we will do anything you imagine in
+              no time.
+            </p>
+          </div>
+          <div class="feature">
+            <img
+              src="imgs/web-design.svg"
+              alt="a graphic related to current feature"
+            />
+            <h3>Seo</h3>
+            <p>
+              We are professional developers, we will do anything you imagine in
+              no time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end features -->
+    <!-- start testimonials -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <div class="content">
+          <div class="feedback">
+            <p>
+              Iam very happy with the product its amazing and i recieve it very
+              fast and the price was amazing.
+            </p>
+            <span class="name">Folan Elfolany</span>
+            <span class="pos">CEO at <em>Company</em></span>
+          </div>
+          <div class="feedback">
+            <p>
+              Iam very happy with the product its amazing and i recieve it very
+              fast and the price was amazing.
+            </p>
+            <span class="name">Folan Elfolany</span>
+            <span class="pos">CEO at <em>Company</em></span>
+          </div>
+          <div class="feedback">
+            <p>
+              Iam very happy with the product its amazing and i recieve it very
+              fast and the price was amazing.
+            </p>
+            <span class="name">Folan Elfolany</span>
+            <span class="pos">CEO at <em>Company</em></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end testimonials -->
+    <!-- start contact us -->
+    <section class="contact-us">
+      <div class="overlay"></div>
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="" method="post">
+          <div class="part1">
+            <input type="text" name="name" placeholder="Your Name" />
+            <input type="tel" name="phone" placeholder="Your Number" />
+            <input type="mail" name="mail" placeholder="Your Mail" />
+            <input type="text" name="subject" placeholder="Subject" />
+          </div>
+          <div class="part2">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- end contact us -->
+    <!-- start footer -->
+    <footer>
+      <div class="container">
+        <p>
+          created with &VeryThinSpace;
+          <i class="fa-solid fa-heart"></i> &VeryThinSpace; by
+          <span>Mohamed Elashmawy</span>
+        </p>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
